@@ -7,7 +7,7 @@
 		$banner = $('#banner'),
 		$header = $('#header');
 
-	// Breakpoints.
+
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
 			large:    [ '981px',   '1280px' ],
@@ -16,14 +16,14 @@
 			xsmall:   [ null,      '480px'  ]
 		});
 
-	// Play initial animations on page load.
+
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
 		});
 
-	// Mobile?
+
 		if (browser.mobile)
 			$body.addClass('is-mobile');
 		else {
@@ -38,7 +38,7 @@
 
 		}
 
-	// Scrolly.
+
 		$('.scrolly')
 			.scrolly({
 				speed: 1500,
